@@ -1,5 +1,5 @@
 * {
-    margin: 0 auto;
+    margin: 0;
     padding: 0px;
     box-sizing: border-box;
 
@@ -9,24 +9,35 @@ body {
     
 
 }
+@font-face {
+    font-family:'Robot-Black' ;
+    src: url(/fonts/Roboto-Black.ttf);
+}
 .container {
-    background-color: white;
+    /* background-color: white; */
     width: 100%;
     margin-top: 20px;
     margin-bottom: 5px;
-    text-align: center;
+   
     
 
 }
+h1 {
+    text-align: center;
+}
+
 .build {
+
     color: chocolate;
     border-top:4px solid grey ;
     border-left:4px solid grey ;
     border-bottom: 4px solid grey;
+    text-align: center;  
 }
 
 .navbar {
     width: 90%;
+    margin: auto;
     margin-top: 10px;
     margin-bottom: 20px;
 
@@ -79,14 +90,17 @@ body {
     text-align: left;
     
 }
+
 h2 {
     text-align: center;
     padding-bottom: 10px;
+    padding-top: 10px;
 }
 .blue-line {
     color: #7fc2f7;
     padding-top: 20px;
     padding-bottom: 15px;
+    font-size: 1.5rem;
 }
 .under-q {
     padding-top: 10px;
@@ -105,44 +119,220 @@ ul {
     list-style-image: url('/images/arrow_bullet.png');
 
    }
-.container-profile {
+.container-kartica {
 
     width: 80%;
-    
-    
-    
-    
+    margin: 0 auto;
 }
 
-
-.profile .profi-pc {
+.profi-pc {
     border-radius: 50%;
     border: 1px;
     width: 10vw;
-}
-.profile {
-    margin-bottom: 20px;
-    background-color: #7fc2f7;
-    display: flex;
-    flex-direction: ;
-    flex-wrap: wrap; 
-    color: white;
-    padding:10px 
     
 }
-
-.card {
-    display: flex;
-    justify-content:flex-start;
-    align-items: flex-start;
-
-}
-.profile .card {
-    
-}
-
-
-
-/* .border-box {
-    border-bottom: 2px solid black;
+/* .pic {
+    border-radius: 50%;
+    padding:1px;
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
 } */
+
+
+.card, p {
+    display: flex;
+    color: white;
+   
+    
+
+}
+h4 {
+    color: black;
+}
+
+.about {
+    width: 100%;
+
+}
+
+
+.kartica {
+
+   
+    padding: 10px;
+    margin: 0 auto;
+    background-color: #7fc2f7;
+    margin-bottom: 20px;
+    
+}
+.profil {
+    display: flex;
+    color: white;
+    gap: 10px;
+    padding: 5px;
+}
+
+
+.main-box {
+    width: 100%;
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    margin: 0;
+    box-sizing: border-box;
+}  
+.upper-box {
+   width: 100%;
+   height:fit-content;
+   display: flex;
+   flex-direction: ;
+
+} 
+.up-left {
+    width: 50%;
+    height: 180px;
+    background-color: #2cdd98;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 17px;
+    padding: 2rem 0;
+    gap: 1rem;
+}
+.up-right {
+    width: 50%;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding:2rem 0;
+    gap: 1rem;
+    background-color: #FF4F81;
+    font-size: 17px;
+
+}
+.logo-pics {
+    width: 20px;
+    padding-right: 5px;
+    color: white;
+    
+}
+.icons {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+   gap: 15px;
+    color: white;
+}
+.lower-box {
+    width: 100%;
+   height:fit-content;
+   display: flex;
+}
+.down-left {
+    width: 50%;
+    height: 180px;
+    background-color: #3369E6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 17px;
+    padding: 2rem 0;
+    gap: 1rem;
+
+   }
+   .down-right {
+    background-color:#7fc2f7;
+    width: 50%;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items:normal;
+   }
+
+   .romboid { 
+    display: flex;
+    justify-content: center;
+    align-self:center;
+    width: 100%;
+
+    padding-bottom: 2rem;
+   }
+   .form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 1 auto;
+    padding: 1.5rem 2rem;
+
+   }
+
+   .inputs {
+   width: 100%;
+   height: fit-content;
+   
+   display:flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 15px;
+  
+   }
+   input{
+    width: 100%;
+    padding: .7rem;
+   }
+   textarea {
+    width: 100%;
+    margin-top: 25px;
+    color: gray;
+   }
+   
+.submit {
+    background-color: orange;
+    color: white;
+    border: 1px  none;
+    padding: 10px;
+   width: fit-content;
+   margin-top: 12px;
+    
+}
+
+.nav-footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    justify-content:baseline ;
+    padding: 4rem 3rem 4rem 4rem;
+    background-color: rgb(53, 51, 51);
+    color: white;
+
+}
+.
+.nav-footer a {
+    color: white;
+    text-decoration: none;
+}
+.nav-footer div {
+    display: flex;
+    gap: 10px;
+}
+ img {
+    display: flex;
+    
+}
+   
+ 
+   @media screen and ( min-width: 768px) {
+     h1, navbar,
+   }
+    
+    
+   
