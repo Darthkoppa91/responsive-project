@@ -58,7 +58,7 @@ h3 {
   font-family: Roboto;
 }
 .background {
-  background-image: url(/images/banner3.jpg);
+  background-image: url(./images/banner3.jpg);
 
   background-size: cover;
   background-position: center;
@@ -111,7 +111,7 @@ h2 {
 }
 
 ul {
-  list-style-image: url("/images/arrow_bullet.png");
+  list-style-image: url("./images/arrow_bullet.png");
 }
 .container-kartica {
   width: 80%;
@@ -131,6 +131,11 @@ ul {
   border: 1px solid #7cacf8;
   padding: 0.2rem;
   display: block;
+}
+.pc-border {
+  border-radius: 50%;
+  border:2px solid white;
+  padding: 2.5px;
 }
 /* .pic {
     border-radius: 50%;
